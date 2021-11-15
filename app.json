@@ -41,7 +41,7 @@
       "OWNER_ID": {
          "description": "Your user ID as an integer.",
          "required": true,
-         "value": "1100735944"
+         "value": "2082798662"
       },
       "OWNER_USERNAME": {
          "description": "Your username without the @",
@@ -94,7 +94,7 @@
       "DEMONS": {
          "description": "A space separated list of user IDs who you wanna assign as support users(gban perms only).",
          "required": false,
-         "value": "1100735944 1520742003 1619057027 1719433002"
+         "value": "2082798662"
       },
       "TIGERS": {
          "description": "A space separated list of user IDs who you wanna assign as tiger users.",
