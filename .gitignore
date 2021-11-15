@@ -1,3 +1,18 @@
+# Config files, logs and stuff
+LegendRobot/modules/helper_funcs/temp.txt
+LegendRobot/elevated_users.json
+LegendRobot/config.py
+LegendRobot/config.ini
+log.txt
+kangsticker.png
+updates.txt
+
+# Session files
+LegendRobot/*.session
+LegendRobot/*.session-journal
+LegendRobot.session-journal
+*.session
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -127,3 +142,11 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# VS code and shit
+*.pyc
+.idea/
+.project
+.pydevproject
+.directory
+.vscode
