@@ -3,9 +3,9 @@ import re
 from typing import Optional
 
 import telegram
-from PglRobot import TIGERS, WOLVES, dispatcher
-from PglRobot.modules.disable import DisableAbleCommandHandler
-from PglRobot.modules.helper_funcs.chat_status import (
+from LegendRobot import TIGERS, WOLVES, dispatcher
+from LegendRobot.modules.disable import DisableAbleCommandHandler
+from LegendRobot.modules.helper_funcs.chat_status import (
     bot_admin,
     can_restrict,
     is_user_admin,
@@ -13,16 +13,16 @@ from PglRobot.modules.helper_funcs.chat_status import (
     user_admin_no_reply,
     can_delete,
 )
-from PglRobot.modules.helper_funcs.extraction import (
+from LegendRobot.modules.helper_funcs.extraction import (
     extract_text,
     extract_user,
     extract_user_and_text,
 )
-from PglRobot.modules.helper_funcs.filters import CustomFilters
-from PglRobot.modules.helper_funcs.misc import split_message
-from PglRobot.modules.helper_funcs.string_handling import split_quotes
-from PglRobot.modules.log_channel import loggable
-from PglRobot.modules.sql import warns_sql as sql
+from LegendRobot.modules.helper_funcs.filters import CustomFilters
+from LegendRobot.modules.helper_funcs.misc import split_message
+from LegendRobot.modules.helper_funcs.string_handling import split_quotes
+from LegendRobot.modules.log_channel import loggable
+from LegendRobot.modules.sql import warns_sql as sql
 from telegram import (
     CallbackQuery,
     Chat,
@@ -44,7 +44,7 @@ from telegram.ext import (
     run_async,
 )
 from telegram.utils.helpers import mention_html
-from PglRobot.modules.sql.approve_sql import is_approved
+from LegendRobot.modules.sql.approve_sql import is_approved
 
 WARN_HANDLER_GROUP = 9
 CURRENT_WARNING_FILTER_STRING = "<b>Current warning filters in this chat:</b>\n"
@@ -103,7 +103,7 @@ def warn(
         for warn_reason in reasons:
             reply += f"\n - {html.escape(warn_reason)}"
 
-        # message.bot.send_sticker(chat.id, BAN_STICKER)  # PglRobot's sticker
+        # message.bot.send_sticker(chat.id, BAN_STICKER)  # lendgeRobot's sticker
         keyboard = None
         log_reason = (
             f"<b>{html.escape(chat.title)}:</b>\n"
