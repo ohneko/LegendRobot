@@ -166,7 +166,7 @@ Once you've set up your database and your configuration is complete, simply run 
 
 Note: the restart bat requires that User account control be disabled.
 
-For queries or any issues regarding the bot please open an issue ticket or visit us at [LegendRobot Support](https://t.me/PglRbotSupport)
+For queries or any issues regarding the bot please open an issue ticket or visit us at [LegendRobot Support](https://t.me/Legend_Userbot)
   
 </details>  
 
