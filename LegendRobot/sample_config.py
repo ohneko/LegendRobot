@@ -17,14 +17,14 @@ class Config(object):
     API_ID = 123456  # integer value, dont use ""
     API_HASH = "awoo"
     TOKEN = "BOT_TOKEN"  # This var used to be API_KEY but it is now TOKEN, adjust accordingly.
-    OWNER_ID = 792109647  # If you dont know, run the bot and do /id in your private chat with it, also an integer
-    OWNER_USERNAME = "iisgaurav"
-    SUPPORT_CHAT = "AuraXSupport"  # Your own group for support, do not add the @
+    OWNER_ID = "2019258432"  # If you dont know, run the bot and do /id in your private chat with it, also an integer
+    OWNER_USERNAME = "LegendBoy_OP"
+    SUPPORT_CHAT = "Legend_Userbot"  # Your own group for support, do not add the @
     JOIN_LOGGER = (
-        -1001253661229
+        -1001344140905
     )  # Prints any new group the bot is added to, prints just the name and ID.
     EVENT_LOGS = (
-        -1001190806654
+        -1001344140905
     )  # Prints information like gbans, sudo promotes, AI enabled disable states that may help in debugging and shit
 
     # RECOMMENDED
