@@ -79,7 +79,7 @@ Hey {}, my name is {}!
 I am Smoothest and Fastest Telegram Group Management bot. You can find my list of available commands with /help.
 """
 G_START_TEXT = """
-Hello LegendRobot Is In The Chat.
+Hello Sir I Am Online
 Uptime - {}!
 """
 
@@ -245,8 +245,8 @@ def start(update: Update, context: CallbackContext):
                         ],
                         [
                             InlineKeyboardButton(
-                                text="🔥 UPDATE 🔥",
-                                url="https://t.me/Official_LegendBot",
+                                text="🔥 Help 🔥",
+                                url="t.me/{}?start=help".format(context.bot.username)
                             ),
                         ],
                     ]
