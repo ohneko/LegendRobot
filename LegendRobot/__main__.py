@@ -479,7 +479,7 @@ def settings_button(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                text="Back",
+                                text="⬅️ Back",
                                 callback_data="stngs_back({})".format(chat_id),
                             )
                         ]
@@ -583,7 +583,7 @@ def donate(update: Update, context: CallbackContext):
 
         if OWNER_ID != 2082798662 and DONATION_LINK:
             update.effective_message.reply_text(
-                "You can also donate to the person currently running me "
+                "You can also donate to the person currently running me"
                 "[here]({})".format(DONATION_LINK),
                 parse_mode=ParseMode.MARKDOWN,
             )
@@ -630,7 +630,7 @@ def main():
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
             dispatcher.bot.sendMessage(
-                f"@{SUPPORT_CHAT}", "LegendRobot now ready to work!"
+                f"@{SUPPORT_CHAT}", "I am Back With New Update"
             )
         except Unauthorized:
             LOGGER.warning(
