@@ -20,6 +20,8 @@ from LegendRobot import (
     StartTime,
     telethn,
     updater,
+    OWNER_USERNAME,
+    START_IMAGE,
 )
 
 # needed to dynamically load modules
@@ -83,8 +85,7 @@ Uptime - {}!
 
 HELP_STRINGS = """
 Hey there! My name is *{}*.
-I'm a Heroine For Fun and help admins to manage their groups! Have a look at the following for an idea of some of \
-the things I can help you with.
+I Can Help U To Manage Ur Group Have a look at the following for an idea of some of the things I can help you with.
 
 *Main* commands available:
  • /help: PM's you this message.
@@ -102,7 +103,7 @@ And the following:
     "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n",
 )
 
-LegendRobot_IMG = "https://telegra.ph/file/30b7e6b8f9ea3ad46066f.jpg"
+LegendRobot_IMG = f"{START_IMAGE}"
 
 LegendRobotG_IMG = "https://telegra.ph/file/e575d1148171cc81c62f3.jpg"
 
@@ -226,7 +227,7 @@ def start(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                text="ADD ME IN YOUR GROUP ⚡️",
+                                text="ADD ME IN YOUR GROUP",
                                 url="t.me/{}?startgroup=true".format(
                                     context.bot.username
                                 ),
@@ -239,13 +240,13 @@ def start(update: Update, context: CallbackContext):
                             ),
                             InlineKeyboardButton(
                                 text="⚜ Owner ⚜",
-                                url="https://t.me/The_LegendBoy",
+                                url=f"https://t.me/{OWNER_USERNAME}",
                             ),
                         ],
                         [
                             InlineKeyboardButton(
-                                text="",
-                                url="https://github.com/LEGEND-OS/LegendRobot",
+                                text="🔥 UPDATE 🔥",
+                                url="https://t.me/Official_LegendBot",
                             ),
                         ],
                     ]
@@ -302,7 +303,7 @@ def help_button(update, context):
         if mod_match:
             module = mod_match.group(1)
             text = (
-                "Here is the help for the *{}* module:\n".format(
+                "*File* ~ *{}*:\n".format(
                     HELPABLE[module].__mod_name__
                 )
                 + HELPABLE[module].__help__
@@ -312,7 +313,7 @@ def help_button(update, context):
                 parse_mode=ParseMode.MARKDOWN,
                 disable_web_page_preview=True,
                 reply_markup=InlineKeyboardMarkup(
-                    [[InlineKeyboardButton(text="Back", callback_data="help_back")]]
+                    [[InlineKeyboardButton(text="⬅️ Back", callback_data="help_back")]]
                 ),
             )
 
@@ -363,12 +364,12 @@ def get_help(update: Update, context: CallbackContext):
         if len(args) >= 2 and any(args[1].lower() == x for x in HELPABLE):
             module = args[1].lower()
             update.effective_message.reply_text(
-                f"Contact me in PM to get help of {module.capitalize()}",
+                f"To Know More About {module.capitalize()} Click Below",
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
                             InlineKeyboardButton(
-                                text="Help",
+                                text="Click Here",
                                 url="t.me/{}?start=ghelp_{}".format(
                                     context.bot.username, module
                                 ),
@@ -379,12 +380,12 @@ def get_help(update: Update, context: CallbackContext):
             )
             return
         update.effective_message.reply_text(
-            "Contact me in PM to get the list of possible commands.",
+            "Click Down To Know More About Me.",
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
                         InlineKeyboardButton(
-                            text="Help",
+                            text="⭐ Help ⭐",
                             url="t.me/{}?start=help".format(context.bot.username),
                         )
                     ]
@@ -554,7 +555,7 @@ def get_settings(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                text="Settings",
+                                text="📍 Settings 📍",
                                 url="t.me/{}?start=stngs_{}".format(
                                     context.bot.username, chat.id
                                 ),
