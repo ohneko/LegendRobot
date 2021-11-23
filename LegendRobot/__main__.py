@@ -73,8 +73,8 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-Hi {}, my name is {}! 
-I am a  Powerfull  group management bot. You can find my list of available commands with /help.
+Hey {}, my name is {}! 
+I am Smoothest and Fastest Telegram Group Management bot. You can find my list of available commands with /help.
 """
 G_START_TEXT = """
 Hello LegendRobot Is In The Chat.
@@ -85,6 +85,7 @@ HELP_STRINGS = """
 Hey there! My name is *{}*.
 I'm a Heroine For Fun and help admins to manage their groups! Have a look at the following for an idea of some of \
 the things I can help you with.
+
 *Main* commands available:
  • /help: PM's you this message.
  • /help <module name>: PM's you info about that module.
@@ -101,14 +102,13 @@ And the following:
     "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n",
 )
 
-LegendRobot_IMG = "https://telegra.ph/file/f1d7b30b05ba9f0dbf4e5.jpg"
+LegendRobot_IMG = "https://telegra.ph/file/30b7e6b8f9ea3ad46066f.jpg"
 
-LegendRobotG_IMG = "https://telegra.ph/file/e8881931bc000c75e8f13.jpg"
+LegendRobotG_IMG = "https://telegra.ph/file/e575d1148171cc81c62f3.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
- You can support the project by contacting [Gaurav Verma](https://t.me/The_LegendBoy).
- Using [PayPal](paypal.me/The_LegendBoy).
- Those who cannot provide monetary support are welcome to help us develop the bot at @VegaCodes.
+ You can support the project by contacting [LegendBoy](https://t.me/The_LegendBoy)..
+ Those who cannot provide monetary support are welcome to help us develop the bot at @Legend_Userbot.
  """
 
 IMPORTED = {}
@@ -234,17 +234,17 @@ def start(update: Update, context: CallbackContext):
                         ],
                         [
                             InlineKeyboardButton(
-                                text="SUPPORT ⚡️",
+                                text="⭐ Support ⭐",
                                 url=f"https://t.me/{SUPPORT_CHAT}",
                             ),
                             InlineKeyboardButton(
-                                text="UPDATES ⚡️",
-                                url="https://t.me/VCUpdates",
+                                text="⚜ Owner ⚜",
+                                url="https://t.me/The_LegendBoy",
                             ),
                         ],
                         [
                             InlineKeyboardButton(
-                                text="SOURCE CODE ⚡️",
+                                text="",
                                 url="https://github.com/LEGEND-OS/LegendRobot",
                             ),
                         ],
