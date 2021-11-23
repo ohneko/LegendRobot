@@ -5,7 +5,7 @@ import time
 from functools import partial
 from contextlib import suppress
 
-impor LegendRobot.modules.sql.welcome_sql as sql
+import LegendRobot.modules.sql.welcome_sql as sql
 import LegendRobot
 from LegendRobot import (
     DEV_USERS,
