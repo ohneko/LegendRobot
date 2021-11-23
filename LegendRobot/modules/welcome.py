@@ -191,13 +191,13 @@ def new_member(update: Update, context: CallbackContext):
 
             if new_mem.id == OWNER_ID:
                 update.effective_message.reply_text(
-                    " ©AuraXNetwork Owner just joined the group",
+                    "LegendBoy Owner just joined the group",
                     reply_to_message_id=reply,
                 )
                 welcome_log = (
                     f"{html.escape(chat.title)}\n"
                     f"#USER_JOINED\n"
-                    f"©AuraXNetwork Owner just joined the group"
+                    f"©LegendBoy Owner just joined the group"
                 )
                 continue
 
@@ -1097,6 +1097,7 @@ def __chat_settings__(chat_id, user_id):
 
 
 __help__ = """
+Give your members a warm welcome with the greetings module! Or a sad goodbye... Depends!
 *Admins only:*
  • `/welcome <on/off>`*:* enable/disable welcome messages.
  • `/welcome`*:* shows current welcome settings.
