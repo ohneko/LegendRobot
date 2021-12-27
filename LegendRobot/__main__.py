@@ -78,6 +78,7 @@ PM_START_TEXT = """
 Hey {}, my name is {}! 
 I am Smoothest and Fastest Telegram Group Management bot. You can find my list of available commands with /help.
 """
+
 G_START_TEXT = """
 Hello Sir I Am Online
 Uptime - {}!
@@ -103,7 +104,7 @@ And the following:
     "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n",
 )
 
-LegendRobot_IMG = f"{START_IMAGE}"
+LegendRobot_IMG = START_IMAGE
 
 LegendRobotG_IMG = "https://telegra.ph/file/e575d1148171cc81c62f3.jpg"
 
@@ -227,7 +228,7 @@ def start(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                text="ADD ME IN YOUR GROUP",
+                                text="ADD ME IN YOUR GROUP ⚡️",
                                 url="t.me/{}?startgroup=true".format(
                                     context.bot.username
                                 ),
@@ -235,18 +236,18 @@ def start(update: Update, context: CallbackContext):
                         ],
                         [
                             InlineKeyboardButton(
-                                text="⭐ Support ⭐",
+                                text="SUPPORT ⚡️",
                                 url=f"https://t.me/{SUPPORT_CHAT}",
                             ),
                             InlineKeyboardButton(
-                                text="⚜ Owner ⚜",
-                                url=f"https://t.me/{OWNER_USERNAME}",
+                                text="UPDATES ⚡️",
+                                url="https://t.me/Official_LegendBot",
                             ),
                         ],
                         [
                             InlineKeyboardButton(
-                                text="🔥 Help 🔥",
-                                url="t.me/{}?start=help".format(context.bot.username)
+                                text="SOURCE CODE ⚡️",
+                                url="https://github.com/LEGEND-OS/LegendRobot",
                             ),
                         ],
                     ]
