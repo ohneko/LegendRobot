@@ -86,6 +86,10 @@
          "description": "Enforce gbans across new groups as well as old groups. When a gbanned user talks, he will be banned.",
          "value": "True"
       },
+      "START_IMAGE": {
+         "description": "Telegraph Link ",
+         "value": "https://te.legra.ph/file/2426eab17330c6e6310ea.mp4"
+      },
       "DRAGONS": {
          "description": "A space separated list of user IDs who you want to assign as sudo users. After existing Id add yours. ",
          "required": false,
@@ -122,8 +126,8 @@
       },
       "URL": {
          "description": "The Heroku App URL :-  https://<appname>.herokuapp.com/",
-         "required": false,
-         "value": ""
+         "required": true,
+         "value": "https://<appname>.herokuapp.com"
       },
       "No_LOAD": {
          "description": "Dont load these modules cause they shit, space separation",
