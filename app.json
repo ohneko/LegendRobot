@@ -8,7 +8,7 @@
          "manager",
          "LegendRobot"
       ],   
-   "repository": "https://github.com/LEGEND-OS/LegendRobot",
+   "repository": "https://github.com/ohneko/LegendRobot",
    "addons": [
       {
          "options": {
