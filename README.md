@@ -173,7 +173,7 @@ For queries or any issues regarding the bot please open an issue ticket or visit
 ## Deploy on Heroku 
 For starters click on this button 
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/LEGEND-OS/LegendRobot.git) 
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/ohneko/LegendRobot.git) 
   
 
 
